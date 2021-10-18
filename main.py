@@ -8,6 +8,16 @@ nr_letters= int(input("How many letters would you like in your password?\n"))
 nr_symbols = int(input(f"How many symbols would you like?\n"))
 nr_numbers = int(input(f"How many numbers would you like?\n"))
 
+password = ""
+
 for char in range(1, nr_letters + 1):
 
     random_char = random.choice(letters)
+    password +=random_char
+
+for char in range(1, nr_letters + 1):
+
+    random_char = random.choice(letters)
+    password +=random_char
+
+print(password)
