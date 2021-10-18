@@ -15,9 +15,14 @@ for char in range(1, nr_letters + 1):
     random_char = random.choice(letters)
     password +=random_char
 
-for char in range(1, nr_letters + 1):
+for char in range(1, nr_symbols + 1):
 
-    random_char = random.choice(letters)
+    random_char = random.choice(symbols)
+    password +=random_char
+
+for char in range(1, nr_numbers+ 1):
+
+    random_char = random.choice(numbers)
     password +=random_char
 
 print(password)
